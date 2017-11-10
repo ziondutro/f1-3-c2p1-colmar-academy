@@ -1,0 +1,347 @@
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  height: 64px;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 24px;
+}
+
+button {
+  background: #4a4a4a;
+  width: 100%;
+  padding: 8px 0;
+  color: white;
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: flex;
+  justify-content: space-around;
+
+  width: 100%;
+  padding: 0;
+
+}
+
+.navigation {
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  display: flex;
+}
+
+nav li > a {
+  color: black;
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 580px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: flex;
+    margin-left: 24px;
+    padding-left: 0;
+    width: 100%;
+  }
+  .logo {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .logo a {
+    display: flex;
+    align-items: center;
+  }
+  .logo span {
+    font-weight: bold;
+  }
+  nav li:nth-child(n+1) {
+    margin-right: 16px;
+  }
+  nav li:last-child {
+    margin-right: 24px;
+  }
+}
+
+main {
+
+}
+
+.practice {
+  display: none;
+}
+
+.banner {
+  width: 100%;
+  height: 180px;
+  background: url('../images/banner.jpg');
+  background-size: cover;
+}
+
+.banner img {
+  display: none;
+}
+
+.start-here {
+  padding: 32px 16px;
+}
+
+@media only screen and (min-width: 800px) {
+  .learn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: lightgray;
+  }
+  .banner {
+    background: none;
+    height: auto;
+    width: 60%;
+    padding: 32px 24px;
+  }
+  .banner img {
+    display: flex;
+  }
+  .start-here {
+    max-width: 423px;
+  }
+  .start-here h1 {
+    font-size: 4vw;
+  }
+}
+
+
+.information {
+  padding: 16px 16px 32px;
+}
+
+.information-text {
+  padding: 8px 16px;
+}
+
+.information-text h3, .information-text p {
+  margin-bottom: 8px;
+}
+
+.info-thumb {
+  height: 150px;
+  overflow: hidden;
+}
+
+
+@media only screen and (min-width: 800px) {
+  .information {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .practice {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 32px 24px;
+  }
+  .practice img {
+    min-height: 350px;
+  }
+  .practice h2 {
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  .info-thumb {
+    height: auto;
+  }
+  .orientation, .campus, .guest-lectures {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding: 16px;
+    max-width: 423px;
+  }
+  .orientation img, .campus img, .guest-lectures img {
+    width: 35%;
+  }
+  .information-features div:first-child {
+    margin-top: 16px;
+  }
+  .information div:nth-child(n+2) {
+    border-top: none;
+  }
+  .information-features {
+    border-left: 1px solid grey;
+    padding-bottom: 32px;
+  }
+  blockquote > footer {
+    margin-top: 32px;
+  }
+}
+
+.featured-courses {
+  padding: 32px 16px;
+}
+
+.featured-courses h2, .exhibition-featured h2 {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.featured-courses img, .featured-courses .course-info p {
+  display: none;
+}
+
+.course-info > h3 {
+  padding: 16px;
+  background: grey;
+  margin-bottom: 8px;
+}
+
+
+@media only screen and (min-width: 550px) {
+  .featured-courses {
+    background: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .featured-courses img, .featured-courses .course-info p {
+    display: flex;
+  }
+  .featured-courses img {
+    height: 154px;
+  }
+  .course-info h3, .course-info {
+    background: white;
+  }
+  .course-info p {
+    padding: 0 16px 8px;
+  }
+  .course-info p:last-child {
+    padding: 0 16px 24px;
+  }
+  .course-card {
+    width: 350px;
+    margin-right: 32px;
+    margin-bottom: 24px;
+  }
+  .course-info {
+    min-height: 154px;
+  }
+}
+
+
+.recent-exhibits, .exhibit-vid h3, .exhibit-vid p {
+  display: none;
+}
+
+.exhibition-featured h2 {
+  padding: 32px 0;
+}
+
+
+@media only screen and (min-width: 750px) {
+
+  .recent-exhibits {
+    display: block;
+  }
+  .exhibition-container {
+    display: flex;
+    flex-direction: row;
+    padding-left: 24px;
+    margin-bottom: 32px;
+  }
+  .exhibit-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    max-width: 423px;
+    height: 168px;
+  }
+  .exhibit-card img {
+    width: 35%;
+    margin-right: 16px;
+  }
+  .exhibit-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .exhibit-card:first-child {
+    background: lightgrey;
+  }
+  .exhibit-vid {
+    margin-right: 24px;
+    width: 60%;
+  }
+  .exhibit-vid h3, .exhibit-vid p {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+  }
+}
+
+footer > nav {
+  display: none;
+}
+
+footer {
+  padding: 32px 0;
+}
+
+.copyright {
+  margin-left: 24px;
+}
+
+@media only screen and (min-width: 400px) {
+  footer {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer > nav {
+    display: flex;
+  }
+  footer > nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  footer > nav ul li:first-child {
+    margin-right: 16px;
+  }
+}
